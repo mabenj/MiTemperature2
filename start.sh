@@ -8,3 +8,6 @@ source venv/bin/activate
 
 ./MiTemperature2.py --watchdogtimer 5 --callback sendToIoTPlatform.py --callback-interval 3600 --battery
 
+# crontab -e
+# @reboot /home/pi/git/MiTemperature2/start.sh >> /home/pi/git/MiTemperature2/cron.log 2>&1
+
