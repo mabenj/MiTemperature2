@@ -6,5 +6,5 @@ cd $DIR
 #uncomment following line to use in python virtual environment
 source bin/activate
 
-./MiTemperature2.py --watchdogtimer 5 #--mqttconfigfile mqtt.conf
+./MiTemperature2.py --watchdogtimer 5 --callback sendToIoTPlatform.py --callback-interval 3600 --battery
 
