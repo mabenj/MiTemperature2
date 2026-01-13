@@ -1,9 +1,9 @@
-#! /usr/bin/python3
+#!/usr/bin/env -S python3 -u
 
 import sys, requests, psutil, time
 
 url = "<URL>"
-device = "<DEVICE>"
+device = "<DEVICE_MAC>"
 headers = {"Content-Type": "application/json; charset=utf-8"}
 
 data = sys.argv[1].split(" ", 1)
